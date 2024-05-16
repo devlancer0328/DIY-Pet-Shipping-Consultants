@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+  font-family:  myFirstFont;
+  src: url('/assets/font/nunito-sans.woff2') format('woff2');
+}
+
+body {
+  background: white !important;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.swiper-pagination {
+  position: relative !important;
+}
+
+.swiper-pagination-bullet {
+  height: 12px !important;
+  width: 12px !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: black !important;
+}
+
+.page-section {
+  margin-bottom: 3.5rem;
+}
+
+.learn-grid {
+  grid-template-columns: 1fr 2fr 20rem 6rem;
+}
