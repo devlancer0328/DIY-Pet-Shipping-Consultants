@@ -114,7 +114,7 @@ export default function Home() {
                     </div>
                     <div>
                       <div className="relative px-6 mt-3 text-lg leading-6 mb-0">
-                        <div className="text">We’re a family-owned pet-loving company.</div>
+                        <div className="text">We’re a US-based family-owned pet-loving company.</div>
                       </div>
                     </div>
                   </li>
