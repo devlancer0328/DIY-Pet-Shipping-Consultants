@@ -60,7 +60,7 @@ export default function Home() {
       topart: topart
     }
     const service_id = process.env.NEXT_PUBLIC_SERVICE_ID;
-    const template_id = process.env.NEXT_PUBLIC_PUBLIC_KEY;
+    const template_id = process.env.NEXT_PUBLIC_TEMPLATE_ID;
     const public_key = process.env.NEXT_PUBLIC_PUBLIC_KEY;
     if (service_id && template_id && public_key) {
       emailjs
