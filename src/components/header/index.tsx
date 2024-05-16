@@ -48,19 +48,24 @@ export default function Header() {
       depart: depart,
       topart: topart
     }
-    emailjs
-      .send('service_diypetshipping', 'template_d5xmtgk', params, {
-        publicKey: 'F6nsA1VNLtqibhRGv',
-      })
-      .then(
-        () => {
-          console.log('SUCCESS!');
-          handleModal()
-        },
-        (error) => {
-          console.log('FAILED...', error.text);
-        },
-      );
+    const service_id = process.env.NEXT_PUBLIC_SERVICE_ID;
+    const template_id = process.env.NEXT_PUBLIC_PUBLIC_KEY;
+    const public_key = process.env.NEXT_PUBLIC_PUBLIC_KEY;
+    if (service_id && template_id && public_key) {
+      emailjs
+        .send(service_id, template_id, params, {
+          publicKey: public_key,
+        })
+        .then(
+          () => {
+            console.log('SUCCESS!');
+            handleModal()
+          },
+          (error) => {
+            console.log('FAILED...', error.text);
+          },
+        );
+    }
   };
 
   useEffect(() => {
