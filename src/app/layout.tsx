@@ -9,8 +9,8 @@ import Footer from "@/components/footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "DIY Pet Shipping Consultants",
-  description: "DIY Pet Shipping Consultants",
+  title: "DIY Pet Shipping",
+  description: "we can help pet owners navigate the often complex paperwork, procedures, and regulatory requirements associated with transporting pets domestically or internationally. This helps to ensure a smooth and hassle-free experience for both the pets and their owners.",
 };
 
 export default function RootLayout({
@@ -19,7 +19,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" style={{ scrollBehavior: "smooth" }}>
+    <html lang="en" style={{ scrollBehavior: "smooth" }} >
       <head>
         <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />

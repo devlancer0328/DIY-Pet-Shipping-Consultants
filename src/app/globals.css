@@ -12,6 +12,7 @@ body {
   background: white !important;
 }
 
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
