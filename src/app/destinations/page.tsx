@@ -396,7 +396,7 @@ export const GlobeDemo = () => {
     ];
 
     return (
-        <div className=" bg-[#E5E7F0] relative w-full px-8">
+        <div className=" bg-[#E5E7F0] relative w-full px-8 rounded-tr-[50px] md:rounded-3xl">
             <div className="w-full flex flex-col lg:flex-row relative items-center justify-center">
                 <div className="flex-none lg:flex-1 h-full flex items-center">
                     <div className="text-2xl">
@@ -457,12 +457,14 @@ export default function Destinations() {
     return (
         <section id="destinations" className="dark:text-black w-full scroll-mt-24 flex flex-col justify-center items-center" >
             <div className="w-full">
-                <div className="py-5 text-center items-center w-full">
-                    <p className="text-5xl text-black">Pet <span className="text-[#4878D0]"> Types</span></p>
+                <div className=" pt-10 text-center items-center w-full">
+                    <p className="text-5xl text-black">Destinations </p>
                 </div>
             </div>
-            <div className="max-w-[1440px] w-full bg-[#E5E7F0] " >
-                <GlobeDemo />
+            <div className="py-10 rounded-tr-[50px] md:rounded-3xl">
+                <div className="max-w-[1440px] w-full bg-[#E5E7F0] rounded-tr-[50px] md:rounded-3xl" >
+                    <GlobeDemo />
+                </div>
             </div>
         </section>
     )

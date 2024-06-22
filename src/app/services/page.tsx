@@ -73,7 +73,7 @@ export default function Services() {
     }
 
     return (
-        <section style={{ background: "#" }} className="pb-20 relative scroll-mt-24 flex my-12 px-4 md:px-8 lg:px-12 flex-col justify-center items-center gap-8">
+        <section style={{ background: "#" }} className=" py-10 relative scroll-mt-24 flex px-4 md:px-8 lg:px-12 flex-col justify-center items-center gap-8">
             <div className="text-center items-center w-full">
                 <p className="text-5xl text-black">Services <span className="text-[#4878D0]"> We Offer:</span></p>
             </div>
