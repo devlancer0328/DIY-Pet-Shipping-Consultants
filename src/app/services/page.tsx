@@ -183,10 +183,10 @@ export default function Services() {
                                 <span>Request Services</span>
                             </button>
                             {openModal &&
-                                <div className='fixed top-0 left-0 w-full h-full bg-gray-300 flex justify-center items-center'>
+                                <div className='fixed top-0 left-0 w-full h-full bg-gray-300 z-50 flex justify-center items-center'>
                                     <div className='max-w-[460px] bg-white shadow-lg py-2 rounded-md'>
                                         <h2 className='text-sm font-medium text-gray-900 border-b border-gray-300 py-3 px-4 mb-4'>This is my modal.</h2>
-                                        <div className="w-full h-screen absolute z-[999] top-0 left-0 justify-start flex flex-row bg-[rgba(0,0,0,0.4)] items-center">
+                                        <div className="w-full h-screen absolute top-0 left-0 justify-start flex flex-row bg-[rgba(0,0,0,0.4)] items-center">
                                             <div className="flex flex-col justify-start w-full items-center px-12 max-h-[90dvh] overflow-y-auto">
                                                 <form ref={form} className="max-w-[1200px] w-full flex flex-col p-4 md:p-8 lg:px-36 lg:py-10 bg-[#2C3442] rounded-3xl" onSubmit={sendEmail}>
                                                     <div className='flex flex-row-reverse'>

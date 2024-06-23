@@ -106,7 +106,7 @@ export default function Header() {
 
   return (
     <>
-      <div id="mainHeader" className={`sticky ${value ? "bg-[#fff] text-black shadow-[0_10px_30px_0_rgba(124,88,211,.15)]" : "bg-transparent text-white "} w-full transition-all z-50 top-0 left-0 box-border flex`}>
+      <div id="mainHeader" className={`sticky ${value ? "bg-[#fff] text-black shadow-[0_10px_30px_0_rgba(124,88,211,.15)]" : "bg-transparent text-white "} w-full transition-all z-10 top-0 left-0 box-border flex`}>
         <div className="flex flex-col justify-center flex-1" >
           <div className="flex flex-col xl:flex-row text-lg gap-4 p-6">
             <Link className="hidden md:block max-w-1/2 cursor-pointer" href="/"><img src="logo.png" className="w-96" /></Link>
