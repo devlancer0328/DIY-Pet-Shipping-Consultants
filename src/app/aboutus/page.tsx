@@ -18,7 +18,7 @@ export default function Aboutus() {
                                     </div>
                                     <div>
                                         <div className="relative mt-3 text-lg leading-6 mb-0">
-                                            <div className="text">I&apos;m Lea and this is my husband Neil. We&apos;re a US-based family-owned company. Our family has been transporting pets both domestically and internationally for years. We&apos;re happy to bring that knowledge and insight to you.</div>
+                                            <div className="text">I&apos;m Lea and this is my husband Neal. We&apos;re a US-based family-owned company. Our family has been transporting pets both domestically and internationally for years. We&apos;re happy to bring that knowledge and insight to you.</div>
                                         </div>
                                     </div>
                                 </div>
