@@ -114,7 +114,8 @@ export default function Header() {
               <div className={`${value ? "text-black" : "text-white"} cursor-pointer hover:text-[#4878D0]`}><Link href="/aboutus">About Us</Link></div>
               <div className={`${value ? "text-black" : "text-white"} cursor-pointer hover:text-[#4878D0]`} ><Link href="/petTypes">Pet Types </Link></div>
               <div className={`${value ? "text-black" : "text-white"} cursor-pointer hover:text-[#4878D0]`} ><Link href="/destinations ">Destinations  </Link></div>
-              <div className={`${value ? "text-black" : "text-white"} cursor-pointer hover:text-[#4878D0]`}><Link href="/services">Services</Link></div>
+              <div className={`${value ? "text-black" : "text-white"} cursor-pointer hover:text-[#4878D0]`} ><Link href="/services">Services</Link>
+              </div>
               <div className={`${value ? "text-black" : "text-white"} cursor-pointer hover:text-[#4878D0]`}><Link href="/considers">Things to Consider </Link></div>
               <div className={`${value ? "text-black" : "text-white"} cursor-pointer hover:text-[#4878D0]`}><Link href="#contactus">Contact us</Link></div>
             </div>
@@ -240,13 +241,13 @@ export default function Header() {
                           <label className="block uppercase tracking-wide text-white text-xs font-bold mb-2" >
                             Pet Age(s)
                           </label>
-                          <input required onChange={e => setPetAge(e.target.value)} name="speaktime" type="number" className="appearance-none block w-full bg-white text-black border border-white rounded py-3 px-4 mb-3 leading-tight focus:outline-none" placeholder="0" />
+                          <input required onChange={e => setPetAge(e.target.value)} name="speaktime" type="text" className="appearance-none block w-full bg-white text-black border border-white rounded py-3 px-4 mb-3 leading-tight focus:outline-none" placeholder="0" />
                         </div>
                         <div className="w-full md:w-1/3 px-3">
                           <label className="block uppercase tracking-wide text-white text-xs font-bold mb-2" >
                             Pet Weight(s)
                           </label>
-                          <input required onChange={e => setPetweight(e.target.value)} name="speaktime" type="number" className="appearance-none block w-full bg-white text-black border border-white rounded py-3 px-4 mb-3 leading-tight focus:outline-none" placeholder="0kg" />
+                          <input required onChange={e => setPetweight(e.target.value)} name="speaktime" type="text" className="appearance-none block w-full bg-white text-black border border-white rounded py-3 px-4 mb-3 leading-tight focus:outline-none" placeholder="0Lbs" />
                         </div>
                       </div>
                       <div className="flex flex-row gap-7">
@@ -294,15 +295,10 @@ export default function Header() {
                         <div className="relative">
                           <select onChange={e => setService(e.target.value)} name="services" className={`outline-none	block appearance-none w-full cursor-pointer bg-white border border-gray-200 text-black py-3 px-4 pr-8 rounded leading-tight ${service ? 'text-black' : 'text-gray-500'}`} id="grid-state">
                             <option value={""} disabled selected hidden >What services are you looking for?</option>
-                            <option className="text-black" value={"Destination Requirements"}>Destination Requirements </option>
-                            <option className="text-black" value={"Veterinarian Requirements"}>Veterinarian Requirements </option>
-                            <option className="text-black" value={"Region Requirements"}>Region Requirements </option>
-                            <option className="text-black" value={"Method of Transpor"}>Method of Transpor </option>
-                            <option className="text-black" value={"Airline Options, Flight Booking, Paperwork & Checking-In"}>Airline Options, Flight Booking, Paperwork & Checking-In </option>
-                            <option className="text-black" value={"Ground Transportation"}>Ground Transportation </option>
-                            <option className="text-black" value={"Airline Accepted Crates "}>Airline Accepted Crates  </option>
-                            <option className="text-black" value={"Pre-filling Health Certificates"}>Pre-filling Health Certificates </option>
-                            <option className="text-black" value={"Reviewing Veterinarian's Paperwork"}>Reviewing Veterinarian&apos;s Paperwork </option>
+                            <option className="text-black" value={"Step-By-Step Guide"}>Step-By-Step Guide </option>
+                            <option className="text-black" value={"Pre-Fill Health Certificate(s)"}>Pre-Fill Health Certificate(s) </option>
+                            <option className="text-black" value={"Review Paperwork"}>Review Paperwork </option>
+                            <option className="text-black" value={"CDC Import Assistance"}>CDC Import Assistance </option>
                           </select>
                           <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-[#2C3442]">
                             <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" /></svg>

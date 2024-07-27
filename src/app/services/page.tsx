@@ -177,6 +177,22 @@ export default function Services() {
                         </div>
                         <h1 className="text-[#ffd700] text-xl mt-3 heading aos-init aos-animate text-center" data-aos="fade-up"> International - $75 USD </h1>
                         <h1 className="text-[#ffd700] text-xl heading aos-init aos-animate text-center" data-aos="fade-up"> Domestic - $25 USD </h1>
+                        <h1 className="text-white text-3xl mt-10 heading aos-init aos-animate" data-aos="fade-up">
+                            CDC Import Assistance:         </h1>
+                        <div className="mt-8">
+                            <ul className="flex flex-col space-y-4">
+                                <li className="flex items-start aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                                    <div className="w-5 pt-1 mr-2">
+                                        <img decoding="async" loading="lazy" className="w-full" alt="Decorative image" src="/assets/svg/small-paw.svg" />
+                                    </div>
+                                    <div className="w-full text-base text-white">
+                                        The CDC recently updated the US import requirements. We can assist by reviewing your documents and guiding you on what you on what is required to meet the US CDC import requirements to bring your dog from an international location into the US
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <h1 className="text-[#ffd700] text-xl mt-3 heading aos-init aos-animate text-center" data-aos="fade-up"> International - $150 USD </h1>
+                        {/* <h1 className="text-[#ffd700] text-xl heading aos-init aos-animate text-center" data-aos="fade-up"> Domestic - $25 USD </h1> */}
                         <h1 className="text-white text-xl heading aos-init mt-10 aos-animate" data-aos="fade-up">&nbsp;&nbsp;By offering these services, we can help pet owners navigate the often complex paperwork, procedures, and regulatory requirements associated with transporting pets domestically or internationally.&nbsp;This helps to ensure a smooth and hassle-free experience for both the pets and their owners. </h1>
                         <div className={` text-lg cursor-pointer self-center mt-10 `}>
                             <button onClick={handleModal} className="text-black bg-[#c7d7f5] hover:bg-[rgb(146,162,204)] py-2 rounded-[20px] w-64">
@@ -274,13 +290,13 @@ export default function Services() {
                                                             <label className="block uppercase tracking-wide text-white text-xs font-bold mb-2" >
                                                                 Pet Age(s)
                                                             </label>
-                                                            <input required onChange={e => setPetAge(e.target.value)} name="speaktime" type="number" className="appearance-none block w-full bg-white text-black border border-white rounded py-3 px-4 mb-3 leading-tight focus:outline-none" placeholder="0" />
+                                                            <input required onChange={e => setPetAge(e.target.value)} name="speaktime" type="text" className="appearance-none block w-full bg-white text-black border border-white rounded py-3 px-4 mb-3 leading-tight focus:outline-none" placeholder="0" />
                                                         </div>
                                                         <div className="w-full md:w-1/3 px-3">
                                                             <label className="block uppercase tracking-wide text-white text-xs font-bold mb-2" >
                                                                 Pet Weight(s)
                                                             </label>
-                                                            <input required onChange={e => setPetweight(e.target.value)} name="speaktime" type="number" className="appearance-none block w-full bg-white text-black border border-white rounded py-3 px-4 mb-3 leading-tight focus:outline-none" placeholder="0kg" />
+                                                            <input required onChange={e => setPetweight(e.target.value)} name="speaktime" type="text" className="appearance-none block w-full bg-white text-black border border-white rounded py-3 px-4 mb-3 leading-tight focus:outline-none" placeholder="0Lbs" />
                                                         </div>
                                                     </div>
                                                     <div className="flex flex-row gap-7">
@@ -327,16 +343,11 @@ export default function Services() {
                                                         </label>
                                                         <div className="relative">
                                                             <select onChange={e => setService(e.target.value)} name="services" className={`outline-none	block appearance-none w-full cursor-pointer bg-white border border-gray-200 text-black py-3 px-4 pr-8 rounded leading-tight ${service ? 'text-black' : 'text-gray-500'}`} id="grid-state">
-                                                                <option value={""} disabled selected hidden >What Services are you Looking for?</option>
-                                                                <option className="text-black" value={"Destination Requirements"}>Destination Requirements </option>
-                                                                <option className="text-black" value={"Veterinarian Requirements"}>Veterinarian Requirements </option>
-                                                                <option className="text-black" value={"Region Requirements"}>Region Requirements </option>
-                                                                <option className="text-black" value={"Method of Transpor"}>Method of Transpor </option>
-                                                                <option className="text-black" value={"Airline Options, Flight Booking, Paperwork & Checking-In"}>Airline Options, Flight Booking, Paperwork & Checking-In </option>
-                                                                <option className="text-black" value={"Ground Transportation"}>Ground Transportation </option>
-                                                                <option className="text-black" value={"Airline Accepted Crates "}>Airline Accepted Crates  </option>
-                                                                <option className="text-black" value={"Pre-filling Health Certificates"}>Pre-filling Health Certificates </option>
-                                                                <option className="text-black" value={"Reviewing Veterinarian's Paperwork"}>Reviewing Veterinarian&apos;s Paperwork </option>
+                                                                <option value={""} disabled selected hidden >What services are you looking for?</option>
+                                                                <option className="text-black" value={"Step-By-Step Guide"}>Step-By-Step Guide </option>
+                                                                <option className="text-black" value={"Pre-Fill Health Certificate(s)"}>Pre-Fill Health Certificate(s) </option>
+                                                                <option className="text-black" value={"Review Paperwork"}>Review Paperwork </option>
+                                                                <option className="text-black" value={"CDC Import Assistance"}>CDC Import Assistance </option>
                                                             </select>
                                                             <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-[#2C3442]">
                                                                 <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" /></svg>

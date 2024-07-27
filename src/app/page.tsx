@@ -25,7 +25,7 @@ export default function Home() {
             </p>
           </div>
         </section>
-        <div className="z-10 pb-10 relative rounded-tr-none md:rounded-tr-brand rounded-bl-none md:rounded-bl-brand acf/reviews bg-tertiary dark:text-black">
+        <div className="pb-10 relative rounded-tr-none md:rounded-tr-brand rounded-bl-none md:rounded-bl-brand acf/reviews bg-tertiary dark:text-black">
           <section className="pt-5">
             <div className="container mx-auto text-center">
               <div className="w-full px-4 md:px-8 lg:px-12 reviews-slider flex justify-center mt-4 md:flex-row flex-col">
